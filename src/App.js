@@ -1,22 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import Vehicule from "./components/Vehicule";
+import ListeVehicules from "./components/ListeVehicules";
+import "./App.css";
 
 function App() {
+  const vehicules = [];
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <div>
+          <Vehicule marque={"ford"} roues={4} passagers={5} />
+        </div>
+
+        <div className="main-section">
+          <ListeVehicules vehicules={vehicules} />
+        </div>
       </header>
     </div>
   );

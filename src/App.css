@@ -1,3 +1,20 @@
+.main-section {
+  display: grid;
+  position: relative;
+}
+
+.section-vehicule {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.btn-add-vehicule {
+  position: absolute;
+  top: -10rem;
+}
+
 .App {
   text-align: center;
 }
