@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import Vehicule from "./components/Vehicule";
 import ListeVehicules from "./components/ListeVehicule";
 import AddVehicleForm from "./components/AddVehicleForm";
+import EditVehicleForm from "./components/EditVehiculeForm";
 import "./App.css";
 
 function App() {
@@ -26,6 +27,10 @@ function App() {
       <div>
         <AddVehicleForm></AddVehicleForm>
       </div>
+
+      {/* <div>
+        <EditVehicleForm></EditVehicleForm>
+      </div> */}
     </div>
   );
 }
